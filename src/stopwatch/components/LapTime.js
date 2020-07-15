@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import './LapTime.css';
 
-import timeFormat from '../utils/timeFormat';
+import timerFormat from '../utils/timerFormat';
 
 class LapTime extends Component {
 
@@ -22,7 +22,7 @@ class LapTime extends Component {
         return (
             <div className="LapTime">
                 <span className="LapTime__lap" >{lap}</span>
-                <span className="LapTime__time" >{timeFormat(time)}</span>
+                <span className="LapTime__time" >{timerFormat(time)}</span>
             </div>
         );
     }

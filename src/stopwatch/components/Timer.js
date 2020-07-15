@@ -1,7 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import './Timer.css';
 
-import timeFormat from '../utils/timeFormat';
+import timerFormat from '../utils/timerFormat';
 
 class Timer extends Component {
 
@@ -18,7 +18,7 @@ class Timer extends Component {
 
         return (
             <div className="Timer">
-                {timeFormat(time)}
+                {timerFormat(time)}
             </div>
         );
     }
